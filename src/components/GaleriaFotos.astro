@@ -2,859 +2,897 @@
 // Galeria.astro
 ---
 
-<section class="py-4 px-4 relative overflow-hidden">
-
-    <div class="max-w-7xl sm:max-w-sm md:max-w-xl mx-auto relative z-10">
-        
-        <!-- TÍTULO ULTRA ELEGANTE -->
-        <div class="text-center mb-20" id="titulo-galeria">
-            <!-- Línea superior decorativa -->
-            <div class="flex items-center justify-center gap-6 mb-8">
-                <div class="w-16 h-px bg-gradient-to-r from-transparent to-[#C9A961]/60"></div>
-                <div class="relative">
-                    <div class="w-2 h-2 bg-[#C9A961] rounded-full"></div>
-                    <div class="absolute inset-0 w-2 h-2 bg-[#C9A961] rounded-full animate-ping"></div>
-                </div>
-                <div class="w-16 h-px bg-gradient-to-l from-transparent to-[#C9A961]/60"></div>
-            </div>
-
-            <h2 class="font-charm text-2xl md:text-3xl lg:text-3xl text-[#C9A961] font-bold mb-4 tracking-wide relative inline-block">
-                NUESTRA HISTORIA
-                <div class="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#C9A961]/30 to-transparent"></div>
-            </h2>
-            
-            <p class="font-charm text-2xl md:text-3xl text-[#626a54]  mt-8 max-w-3xl mx-auto leading-relaxed">
-                Cada momento capturado es un tesoro eterno
-            </p>
-
-            <!-- Ornamento inferior -->
-            <div class="flex items-center justify-center gap-6 mt-8">
-                <div class="w-16 h-px bg-gradient-to-r from-transparent to-[#C9A961]/60"></div>
-                <div class="relative">
-                    <div class="w-2 h-2 bg-[#C9A961] rounded-full"></div>
-                    <div class="absolute inset-0 w-2 h-2 bg-[#C9A961] rounded-full animate-ping"></div>
-                </div>
-                <div class="w-16 h-px bg-gradient-to-l from-transparent to-[#C9A961]/60"></div>
-            </div>
+<section class="relative w-full py-8 px-6" id="seccion-galeria">
+    <!-- TÍTULO -->
+    <div
+        class="max-w-md mx-auto text-center mb-8 opacity-0"
+        id="galeria-titulo"
+    >
+        <div class="flex items-center justify-center gap-3 mb-4">
+            <div class="h-px w-16 bg-[#C9A961]/40"></div>
+            <span class="text-[#C9A961] text-base">✦</span>
+            <div class="h-px w-16 bg-[#C9A961]/40"></div>
         </div>
 
-        <!-- GRID DE FOTOS CON DISEÑO BENTO PREMIUM -->
-        <div class="grid grid-cols-12 gap-5 md:gap-7">
-            
-            <!-- FOTO 1 - Hero Extra Grande -->
-            <div class="col-span-12 md:col-span-7 foto-card group cursor-pointer" data-index="0">
-                <div class="relative overflow-hidden rounded-[2rem] transition-all duration-700 aspect-[16/10] bg-gradient-to-br from-[#C9A961]/5 to-transparent border border-[#C9A961]/10 hover:border-[#C9A961]/30">
-                    <img
-                        src="/imagenes/Foto1.webp"
-                        alt="Momento 1"
-                        class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000 ease-out"
-                    />
-                    <!-- Overlay premium con gradiente -->
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-40 group-hover:opacity-70 transition-opacity duration-500"></div>
-                    <div class="absolute inset-0 bg-gradient-to-br from-[#C9A961]/0 via-[#C9A961]/10 to-[#C9A961]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                    
-                    <!-- Marco interno elegante -->
-                    <div class="absolute inset-6 border border-white/0 group-hover:border-white/40 rounded-3xl transition-all duration-700 pointer-events-none"></div>
-                    
-                    <!-- Lupa elegante con glassmorphism -->
-                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 scale-50 group-hover:scale-100 transition-all duration-500">
-                        <div class="relative">
-                            <!-- Círculo exterior con blur -->
-                            <div class="w-24 h-24 rounded-full bg-white/20 backdrop-blur-2xl flex items-center justify-center shadow-2xl border-2 border-white/40">
-                                <!-- Lupa SVG elegante -->
-                                <svg class="w-12 h-12 text-white drop-shadow-2xl" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round">
-                                    <circle cx="10.5" cy="10.5" r="6.5" stroke-width="2.5"/>
-                                    <path d="M15.5 15.5L21 21" stroke-width="2.5"/>
-                                    <!-- Efecto de brillo en el cristal de la lupa -->
-                                    <path d="M13 8.5a3.5 3.5 0 00-5 0" stroke="white" stroke-width="1.8" opacity="0.5"/>
-                                </svg>
-                            </div>
-                            <!-- Anillo dorado exterior pulsante -->
-                            <div class="absolute inset-0 w-24 h-24 rounded-full border-2 border-[#C9A961]/60 animate-ping-slow"></div>
-                            <!-- Resplandor dorado difuso -->
-                            <div class="absolute inset-0 w-24 h-24 rounded-full bg-[#C9A961]/20 blur-2xl"></div>
-                        </div>
-                    </div>
-                    
-                    <!-- Etiqueta flotante elegante -->
-                    <div class="absolute bottom-6 left-6 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
-                        <div class="bg-white/95 backdrop-blur-xl px-6 py-3 rounded-2xl shadow-xl border border-[#C9A961]/20">
-                            <span class="text-[#C9A961] font-charm text-lg font-semibold">Momento Especial 1</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <h3
+            class="text-[#C9A961] tracking-[0.2em] uppercase text-xl md:text-2xl lg:text-2xl xl:text-3xl font-semibold mb-2"
+        >
+            Nuestra Galería
+        </h3>
 
-            <!-- FOTO 2 - Mediana Vertical -->
-            <div class="col-span-6 md:col-span-5 foto-card group cursor-pointer" data-index="1">
-                <div class="relative overflow-hidden rounded-[2rem] transition-all duration-700 aspect-[3/4] bg-gradient-to-br from-[#C9A961]/5 to-transparent border border-[#C9A961]/10 hover:border-[#C9A961]/30">
-                    <img
-                        src="/imagenes/Foto2.webp"
-                        alt="Momento 2"
-                        class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000 ease-out"
-                    />
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-40 group-hover:opacity-70 transition-opacity duration-500"></div>
-                    <div class="absolute inset-0 bg-gradient-to-br from-[#C9A961]/0 via-[#C9A961]/10 to-[#C9A961]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                    <div class="absolute inset-6 border border-white/0 group-hover:border-white/40 rounded-3xl transition-all duration-700 pointer-events-none"></div>
-                    
-                    <!-- Lupa elegante con glassmorphism -->
-                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 scale-50 group-hover:scale-100 transition-all duration-500">
-                        <div class="relative">
-                            <!-- Círculo exterior con blur -->
-                            <div class="w-20 h-20 rounded-full bg-white/20 backdrop-blur-2xl flex items-center justify-center shadow-2xl border-2 border-white/40">
-                                <!-- Lupa SVG elegante -->
-                                <svg class="w-10 h-10 text-white drop-shadow-2xl" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round">
-                                    <circle cx="10.5" cy="10.5" r="6.5" stroke-width="2.5"/>
-                                    <path d="M15.5 15.5L21 21" stroke-width="2.5"/>
-                                    <!-- Efecto de brillo en el cristal de la lupa -->
-                                    <path d="M13 8.5a3.5 3.5 0 00-5 0" stroke="white" stroke-width="1.8" opacity="0.5"/>
-                                </svg>
-                            </div>
-                            <!-- Anillo dorado exterior pulsante -->
-                            <div class="absolute inset-0 w-20 h-20 rounded-full border-2 border-[#C9A961]/60 animate-ping-slow"></div>
-                            <!-- Resplandor dorado difuso -->
-                            <div class="absolute inset-0 w-20 h-20 rounded-full bg-[#C9A961]/20 blur-2xl"></div>
-                        </div>
-                    </div>
+        <p class="font-charm text-[#626a54] text-2xl md:text-3xl">
+            Momentos que atesoramos
+        </p>
 
-                    <div class="absolute bottom-6 left-6 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
-                        <div class="bg-white/95 backdrop-blur-xl px-5 py-2.5 rounded-2xl shadow-xl border border-[#C9A961]/20">
-                            <span class="text-[#C9A961] font-charm text-base font-semibold">Momento 2</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- FOTO 3 - Mediana Vertical -->
-            <div class="col-span-6 md:col-span-5 foto-card group cursor-pointer" data-index="2">
-                <div class="relative overflow-hidden rounded-[2rem] transition-all duration-700 aspect-[3/4] bg-gradient-to-br from-[#C9A961]/5 to-transparent border border-[#C9A961]/10 hover:border-[#C9A961]/30">
-                    <img
-                        src="/imagenes/Foto3.webp"
-                        alt="Momento 3"
-                        class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000 ease-out"
-                    />
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-40 group-hover:opacity-70 transition-opacity duration-500"></div>
-                    <div class="absolute inset-0 bg-gradient-to-br from-[#C9A961]/0 via-[#C9A961]/10 to-[#C9A961]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                    <div class="absolute inset-6 border border-white/0 group-hover:border-white/40 rounded-3xl transition-all duration-700 pointer-events-none"></div>
-                    
-                    <!-- Lupa elegante con glassmorphism -->
-                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 scale-50 group-hover:scale-100 transition-all duration-500">
-                        <div class="relative">
-                            <!-- Círculo exterior con blur -->
-                            <div class="w-20 h-20 rounded-full bg-white/20 backdrop-blur-2xl flex items-center justify-center shadow-2xl border-2 border-white/40">
-                                <!-- Lupa SVG elegante -->
-                                <svg class="w-10 h-10 text-white drop-shadow-2xl" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round">
-                                    <circle cx="10.5" cy="10.5" r="6.5" stroke-width="2.5"/>
-                                    <path d="M15.5 15.5L21 21" stroke-width="2.5"/>
-                                    <!-- Efecto de brillo en el cristal de la lupa -->
-                                    <path d="M13 8.5a3.5 3.5 0 00-5 0" stroke="white" stroke-width="1.8" opacity="0.5"/>
-                                </svg>
-                            </div>
-                            <!-- Anillo dorado exterior pulsante -->
-                            <div class="absolute inset-0 w-20 h-20 rounded-full border-2 border-[#C9A961]/60 animate-ping-slow"></div>
-                            <!-- Resplandor dorado difuso -->
-                            <div class="absolute inset-0 w-20 h-20 rounded-full bg-[#C9A961]/20 blur-2xl"></div>
-                        </div>
-                    </div>
-
-                    <div class="absolute bottom-6 left-6 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
-                        <div class="bg-white/95 backdrop-blur-xl px-5 py-2.5 rounded-2xl shadow-xl border border-[#C9A961]/20">
-                            <span class="text-[#C9A961] font-charm text-base font-semibold">Momento 3</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- FOTO 4 - Grande Horizontal -->
-            <div class="col-span-12 md:col-span-7 foto-card group cursor-pointer" data-index="3">
-                <div class="relative overflow-hidden rounded-[2rem] transition-all duration-700 aspect-[16/9] bg-gradient-to-br from-[#C9A961]/5 to-transparent border border-[#C9A961]/10 hover:border-[#C9A961]/30">
-                    <img
-                        src="/imagenes/Foto4.webp"
-                        alt="Momento 4"
-                        class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000 ease-out"
-                    />
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-40 group-hover:opacity-70 transition-opacity duration-500"></div>
-                    <div class="absolute inset-0 bg-gradient-to-br from-[#C9A961]/0 via-[#C9A961]/10 to-[#C9A961]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                    <div class="absolute inset-6 border border-white/0 group-hover:border-white/40 rounded-3xl transition-all duration-700 pointer-events-none"></div>
-                    
-                    <!-- Lupa elegante con glassmorphism -->
-                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 scale-50 group-hover:scale-100 transition-all duration-500">
-                        <div class="relative">
-                            <!-- Círculo exterior con blur -->
-                            <div class="w-24 h-24 rounded-full bg-white/20 backdrop-blur-2xl flex items-center justify-center shadow-2xl border-2 border-white/40">
-                                <!-- Lupa SVG elegante -->
-                                <svg class="w-12 h-12 text-white drop-shadow-2xl" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round">
-                                    <circle cx="10.5" cy="10.5" r="6.5" stroke-width="2.5"/>
-                                    <path d="M15.5 15.5L21 21" stroke-width="2.5"/>
-                                    <!-- Efecto de brillo en el cristal de la lupa -->
-                                    <path d="M13 8.5a3.5 3.5 0 00-5 0" stroke="white" stroke-width="1.8" opacity="0.5"/>
-                                </svg>
-                            </div>
-                            <!-- Anillo dorado exterior pulsante -->
-                            <div class="absolute inset-0 w-24 h-24 rounded-full border-2 border-[#C9A961]/60 animate-ping-slow"></div>
-                            <!-- Resplandor dorado difuso -->
-                            <div class="absolute inset-0 w-24 h-24 rounded-full bg-[#C9A961]/20 blur-2xl"></div>
-                        </div>
-                    </div>
-
-                    <div class="absolute bottom-6 left-6 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
-                        <div class="bg-white/95 backdrop-blur-xl px-6 py-3 rounded-2xl shadow-xl border border-[#C9A961]/20">
-                            <span class="text-[#C9A961] font-charm text-lg font-semibold">Momento Especial 4</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- FOTO 5 - Cuadrada -->
-            <div class="col-span-6 md:col-span-6 foto-card group cursor-pointer" data-index="4">
-                <div class="relative overflow-hidden rounded-[2rem] transition-all duration-700 aspect-square bg-gradient-to-br from-[#C9A961]/5 to-transparent border border-[#C9A961]/10 hover:border-[#C9A961]/30">
-                    <img
-                        src="/imagenes/Foto5.webp"
-                        alt="Momento 5"
-                        class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000 ease-out"
-                    />
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-40 group-hover:opacity-70 transition-opacity duration-500"></div>
-                    <div class="absolute inset-0 bg-gradient-to-br from-[#C9A961]/0 via-[#C9A961]/10 to-[#C9A961]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                    <div class="absolute inset-6 border border-white/0 group-hover:border-white/40 rounded-3xl transition-all duration-700 pointer-events-none"></div>
-                    
-                    <!-- Lupa elegante con glassmorphism -->
-                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 scale-50 group-hover:scale-100 transition-all duration-500">
-                        <div class="relative">
-                            <!-- Círculo exterior con blur -->
-                            <div class="w-20 h-20 rounded-full bg-white/20 backdrop-blur-2xl flex items-center justify-center shadow-2xl border-2 border-white/40">
-                                <!-- Lupa SVG elegante -->
-                                <svg class="w-10 h-10 text-white drop-shadow-2xl" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round">
-                                    <circle cx="10.5" cy="10.5" r="6.5" stroke-width="2.5"/>
-                                    <path d="M15.5 15.5L21 21" stroke-width="2.5"/>
-                                    <!-- Efecto de brillo en el cristal de la lupa -->
-                                    <path d="M13 8.5a3.5 3.5 0 00-5 0" stroke="white" stroke-width="1.8" opacity="0.5"/>
-                                </svg>
-                            </div>
-                            <!-- Anillo dorado exterior pulsante -->
-                            <div class="absolute inset-0 w-20 h-20 rounded-full border-2 border-[#C9A961]/60 animate-ping-slow"></div>
-                            <!-- Resplandor dorado difuso -->
-                            <div class="absolute inset-0 w-20 h-20 rounded-full bg-[#C9A961]/20 blur-2xl"></div>
-                        </div>
-                    </div>
-
-                    <div class="absolute bottom-6 left-6 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
-                        <div class="bg-white/95 backdrop-blur-xl px-5 py-2.5 rounded-2xl shadow-xl border border-[#C9A961]/20">
-                            <span class="text-[#C9A961] font-charm text-base font-semibold">Momento 5</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- FOTO 6 - Cuadrada -->
-            <div class="col-span-6 md:col-span-6 foto-card group cursor-pointer" data-index="5">
-                <div class="relative overflow-hidden rounded-[2rem] transition-all duration-700 aspect-square bg-gradient-to-br from-[#C9A961]/5 to-transparent border border-[#C9A961]/10 hover:border-[#C9A961]/30">
-                    <img
-                        src="/imagenes/Foto6.webp"
-                        alt="Momento 6"
-                        class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000 ease-out"
-                    />
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-40 group-hover:opacity-70 transition-opacity duration-500"></div>
-                    <div class="absolute inset-0 bg-gradient-to-br from-[#C9A961]/0 via-[#C9A961]/10 to-[#C9A961]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                    <div class="absolute inset-6 border border-white/0 group-hover:border-white/40 rounded-3xl transition-all duration-700 pointer-events-none"></div>
-                    
-                    <!-- Lupa elegante con glassmorphism -->
-                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 scale-50 group-hover:scale-100 transition-all duration-500">
-                        <div class="relative">
-                            <!-- Círculo exterior con blur -->
-                            <div class="w-20 h-20 rounded-full bg-white/20 backdrop-blur-2xl flex items-center justify-center shadow-2xl border-2 border-white/40">
-                                <!-- Lupa SVG elegante -->
-                                <svg class="w-10 h-10 text-white drop-shadow-2xl" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round">
-                                    <circle cx="10.5" cy="10.5" r="6.5" stroke-width="2.5"/>
-                                    <path d="M15.5 15.5L21 21" stroke-width="2.5"/>
-                                    <!-- Efecto de brillo en el cristal de la lupa -->
-                                    <path d="M13 8.5a3.5 3.5 0 00-5 0" stroke="white" stroke-width="1.8" opacity="0.5"/>
-                                </svg>
-                            </div>
-                            <!-- Anillo dorado exterior pulsante -->
-                            <div class="absolute inset-0 w-20 h-20 rounded-full border-2 border-[#C9A961]/60 animate-ping-slow"></div>
-                            <!-- Resplandor dorado difuso -->
-                            <div class="absolute inset-0 w-20 h-20 rounded-full bg-[#C9A961]/20 blur-2xl"></div>
-                        </div>
-                    </div>
-
-                    <div class="absolute bottom-6 left-6 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
-                        <div class="bg-white/95 backdrop-blur-xl px-5 py-2.5 rounded-2xl shadow-xl border border-[#C9A961]/20">
-                            <span class="text-[#C9A961] font-charm text-base font-semibold">Momento 6</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+        <div class="flex items-center justify-center gap-3 mt-4">
+            <div class="h-px w-16 bg-[#C9A961]/40"></div>
+            <span class="text-[#C9A961] text-base">✦</span>
+            <div class="h-px w-16 bg-[#C9A961]/40"></div>
         </div>
-
-        <!-- ORNAMENTO INFERIOR MINIMALISTA -->
-        <div class="flex justify-center mt-20" id="ornamento-inferior">
-            <div class="flex items-center gap-4">
-                <div class="w-24 h-px bg-gradient-to-r from-transparent to-[#C9A961]/60"></div>
-                <div class="relative">
-                    <div class="w-2.5 h-2.5 bg-[#C9A961] rounded-full"></div>
-                    <div class="absolute inset-0 w-2.5 h-2.5 bg-[#C9A961] rounded-full animate-ping"></div>
-                </div>
-                <div class="w-24 h-px bg-gradient-to-l from-transparent to-[#C9A961]/60"></div>
-            </div>
-        </div>
-
     </div>
 
-    <!-- 🖼️ MODAL ULTRA PREMIUM CON CARRUSEL -->
-    <div id="modal-galeria" class="fixed inset-0 bg-black/97 backdrop-blur-3xl z-50 hidden items-center justify-center">
-        
-        <!-- Botón cerrar minimalista -->
-        <button id="cerrar-modal" class="absolute top-6 right-6 md:top-10 md:right-10 w-14 h-14 md:w-16 md:h-16 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-2xl flex items-center justify-center transition-all duration-300 group z-50 border border-white/20 hover:border-white/40 hover:rotate-90">
-            <svg class="w-6 h-6 md:w-7 md:h-7 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+    <!-- CARRUSEL -->
+    <div class="max-w-md mx-auto relative z-10">
+        <div id="galeria-wrapper" class="relative w-full opacity-0">
+            <!-- Esquinas decorativas -->
+            <div
+                class="absolute -inset-3 rounded-[2rem] pointer-events-none z-0"
+            >
+                <div
+                    class="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-[#C9A961]/40 rounded-tl-2xl"
+                >
+                </div>
+                <div
+                    class="absolute top-0 right-0 w-8 h-8 border-t-2 border-r-2 border-[#C9A961]/40 rounded-tr-2xl"
+                >
+                </div>
+                <div
+                    class="absolute bottom-0 left-0 w-8 h-8 border-b-2 border-l-2 border-[#C9A961]/40 rounded-bl-2xl"
+                >
+                </div>
+                <div
+                    class="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-[#C9A961]/40 rounded-br-2xl"
+                >
+                </div>
+            </div>
+
+            <!-- Viewport slides -->
+            <div
+                class="relative overflow-hidden rounded-[1.5rem] z-10"
+                id="slides-viewport"
+                style="aspect-ratio: 3/4;"
+            >
+            </div>
+
+            <!-- Gradiente inferior -->
+            <div
+                class="absolute bottom-0 left-0 right-0 h-32 z-20 pointer-events-none rounded-b-[1.5rem]"
+                style="background: linear-gradient(to top, rgba(0,0,0,0.45), transparent);"
+            >
+            </div>
+
+            <!-- Número slide -->
+            <div
+                class="absolute bottom-5 left-1/2 -translate-x-1/2 z-30 flex items-center gap-3"
+            >
+                <div class="w-6 h-px bg-white/40"></div>
+                <span
+                    id="num-slide"
+                    class="font-charm text-white/80 text-lg tracking-widest"
+                    >01</span
+                >
+                <div class="w-6 h-px bg-white/40"></div>
+            </div>
+
+            <!-- Círculo progreso -->
+            <div class="absolute top-4 right-4 z-30">
+                <svg
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    class="rotate-[-90deg]"
+                >
+                    <circle
+                        cx="18"
+                        cy="18"
+                        r="15"
+                        fill="none"
+                        stroke="rgba(201,169,97,0.2)"
+                        stroke-width="2"></circle>
+                    <circle
+                        id="progreso-circulo"
+                        cx="18"
+                        cy="18"
+                        r="15"
+                        fill="none"
+                        stroke="rgba(201,169,97,0.9)"
+                        stroke-width="2"
+                        stroke-dasharray="94.2"
+                        stroke-dashoffset="94.2"
+                        stroke-linecap="round"></circle>
+                </svg>
+            </div>
+
+            <!-- Dots lateral -->
+            <div
+                class="absolute left-3 top-1/2 -translate-y-1/2 z-30 flex flex-col gap-2"
+                id="dots-lateral"
+            >
+            </div>
+        </div>
+
+        <!-- MINIATURAS -->
+        <div class="mt-4 mb-2 opacity-0" id="miniaturas-container">
+            <div
+                class="flex gap-2 overflow-x-auto pb-2 snap-x snap-mandatory justify-center"
+                id="miniaturas-track"
+                style="scrollbar-width: none; -ms-overflow-style: none;"
+            >
+            </div>
+        </div>
+
+        <!-- BOTÓN VER GALERÍA -->
+        <div
+            class="flex justify-center mt-6 mb-2 opacity-0"
+            id="btn-galeria-container"
+        >
+            <button id="btn-ver-galeria" class="boton-galeria group font-charm">
+                <svg
+                    class="w-4 h-4 transition-transform duration-300 group-hover:-translate-y-0.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                >
+                    <rect
+                        x="3"
+                        y="3"
+                        width="7"
+                        height="7"
+                        rx="1"
+                        stroke-width="1.5"></rect>
+                    <rect
+                        x="14"
+                        y="3"
+                        width="7"
+                        height="7"
+                        rx="1"
+                        stroke-width="1.5"></rect>
+                    <rect
+                        x="3"
+                        y="14"
+                        width="7"
+                        height="7"
+                        rx="1"
+                        stroke-width="1.5"></rect>
+                    <rect
+                        x="14"
+                        y="14"
+                        width="7"
+                        height="7"
+                        rx="1"
+                        stroke-width="1.5"></rect>
+                </svg>
+                Ver Galería
+            </button>
+        </div>
+
+        <!-- Crédito -->
+        <div
+            class="flex items-center justify-center gap-4 mt-4 opacity-0"
+            id="credito-galeria"
+        >
+            <div
+                style="height:1px; flex:1; background: linear-gradient(to right, transparent, #C9A961);"
+            >
+            </div>
+            <span
+                class="text-[#C9A961]/60 text-xs tracking-[0.3em] uppercase font-charm"
+                >Nuestra galería</span
+            >
+            <div
+                style="height:1px; flex:1; background: linear-gradient(to left, transparent, #C9A961);"
+            >
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL FULLSCREEN -->
+    <div
+        id="modal-galeria"
+        class="fixed inset-0 z-50 hidden items-center justify-center"
+        style="background: rgba(0,0,0,0.96);"
+    >
+        <div
+            class="absolute inset-0 pointer-events-none overflow-hidden"
+            id="modal-particulas"
+        >
+        </div>
+
+        <button
+            id="cerrar-modal"
+            class="absolute top-6 right-6 w-12 h-12 rounded-full flex items-center justify-center transition-all duration-500 z-50 hover:rotate-90"
+            style="background: rgba(201,169,97,0.15); border: 1px solid rgba(201,169,97,0.3);"
+        >
+            <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="#C9A961"
+                viewBox="0 0 24 24"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"></path>
             </svg>
         </button>
 
-        <!-- Contenedor principal -->
-        <div class="relative w-full h-full flex items-center justify-center px-2 md:px-16 lg:px-24">
-            
-            <!-- Botón anterior -->
-            <button id="btn-anterior" class="absolute left-4 md:left-8 lg:left-12 w-14 h-14 md:w-16 md:h-16 rounded-full bg-white/10 hover:bg-[#C9A961]/30 backdrop-blur-2xl flex items-center justify-center transition-all duration-300 z-40 border border-white/20 hover:border-[#C9A961]/50 group hover:scale-110">
-                <svg class="w-7 h-7 text-white group-hover:-translate-x-0.5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
+        <div
+            class="relative w-full h-full flex items-center justify-center px-4 md:px-20"
+        >
+            <button
+                id="btn-anterior"
+                class="absolute left-3 md:left-8 z-40 w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
+                style="background: rgba(201,169,97,0.12); border: 1px solid rgba(201,169,97,0.25);"
+            >
+                <svg
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke="#C9A961"
+                    viewBox="0 0 24 24"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 19l-7-7 7-7"></path>
                 </svg>
             </button>
 
-            <!-- Contenedor de carrusel -->
-            <div class="relative max-w-6xl w-full overflow-hidden" id="modal-contenido">
-                
-                <!-- Track del carrusel -->
-                <div id="carrusel-track" class="flex transition-transform duration-700 ease-out">
-                    <!-- Las imágenes se generarán dinámicamente -->
-                </div>
-
-                <!-- Información de la foto -->
-                <div class="absolute top-6 left-6 md:top-8 md:left-8 z-30 opacity-0 animate-fade-in" id="info-foto">
-                    <div class="bg-white/10 backdrop-blur-2xl px-6 py-3 md:px-8 md:py-4 rounded-2xl border border-white/20 shadow-2xl">
-                        <p class="text-white font-charm text-base md:text-lg font-semibold" id="titulo-foto">Momento Especial</p>
+            <div
+                class="relative w-full max-w-xs md:max-w-md z-30"
+                id="modal-contenido"
+            >
+                <div class="absolute -inset-4 pointer-events-none">
+                    <div
+                        class="absolute top-0 left-0 w-6 h-6 border-t border-l border-[#C9A961]/30"
+                    >
+                    </div>
+                    <div
+                        class="absolute top-0 right-0 w-6 h-6 border-t border-r border-[#C9A961]/30"
+                    >
+                    </div>
+                    <div
+                        class="absolute bottom-0 left-0 w-6 h-6 border-b border-l border-[#C9A961]/30"
+                    >
+                    </div>
+                    <div
+                        class="absolute bottom-0 right-0 w-6 h-6 border-b border-r border-[#C9A961]/30"
+                    >
                     </div>
                 </div>
-
-                <!-- Contador minimalista -->
-                <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-30">
-                    <div class="bg-white/10 backdrop-blur-2xl px-8 py-4 rounded-full border border-white/20 shadow-2xl">
-                        <div class="flex items-center gap-4">
-                            <span id="numero-actual" class="text-white font-charm text-2xl md:text-3xl font-bold">1</span>
-                            <div class="w-px h-8 bg-white/30"></div>
-                            <span id="numero-total" class="text-white/60 font-charm text-xl md:text-2xl">6</span>
-                        </div>
-                    </div>
+                <div id="modal-track" class="flex will-change-transform"></div>
+                <div
+                    class="absolute -bottom-10 left-1/2 -translate-x-1/2 flex items-center gap-3 whitespace-nowrap"
+                >
+                    <span
+                        id="modal-num"
+                        class="font-charm text-[#C9A961]/70 text-base">01</span
+                    >
+                    <div class="flex gap-1" id="modal-dots-mini"></div>
+                    <span
+                        class="font-charm text-white/30 text-base"
+                        id="modal-total">17</span
+                    >
                 </div>
-
-                <!-- Miniaturas premium -->
-                <div class="absolute bottom-24 left-1/2 -translate-x-1/2 z-30 hidden md:block">
-                    <div class="flex gap-3 bg-white/5 backdrop-blur-2xl px-6 py-4 rounded-full border border-white/10">
-                        <div id="miniaturas-nav" class="flex gap-3">
-                            <!-- Se generarán dinámicamente -->
-                        </div>
-                    </div>
-                </div>
-
             </div>
 
-            <!-- Botón siguiente -->
-            <button id="btn-siguiente" class="absolute right-4 md:right-8 lg:right-12 w-14 h-14 md:w-16 md:h-16 rounded-full bg-white/10 hover:bg-[#C9A961]/30 backdrop-blur-2xl flex items-center justify-center transition-all duration-300 z-40 border border-white/20 hover:border-[#C9A961]/50 group hover:scale-110">
-                <svg class="w-7 h-7 text-white group-hover:translate-x-0.5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
+            <button
+                id="btn-siguiente"
+                class="absolute right-3 md:right-8 z-40 w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
+                style="background: rgba(201,169,97,0.12); border: 1px solid rgba(201,169,97,0.25);"
+            >
+                <svg
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke="#C9A961"
+                    viewBox="0 0 24 24"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 5l7 7-7 7"></path>
                 </svg>
             </button>
-
         </div>
-
     </div>
-
 </section>
 
 <script>
     import { gsap } from "gsap";
     import { ScrollTrigger } from "gsap/ScrollTrigger";
-
     gsap.registerPlugin(ScrollTrigger);
 
-    if (typeof window !== 'undefined') {
+    if (typeof window !== "undefined") {
         document.addEventListener("DOMContentLoaded", () => {
-            console.log("📸 Iniciando galería ultra premium...");
+            // ── GSAP SET INICIAL ──
+            gsap.set("#galeria-titulo", { opacity: 0, y: 20 });
+            gsap.set("#galeria-wrapper", { opacity: 0, scale: 0.96 });
+            gsap.set("#miniaturas-container", { opacity: 0, y: 10 });
+            gsap.set("#btn-galeria-container", { opacity: 0, y: 10 });
+            gsap.set("#credito-galeria", { opacity: 0 });
 
-            // 🎯 ESTADO INICIAL
-            gsap.set("#titulo-galeria", { opacity: 0, y: -40 });
-            gsap.set(".foto-card", { opacity: 0, y: 60, scale: 0.9 });
-            gsap.set("#ornamento-inferior", { opacity: 0, scale: 0.8 });
-
-            // ✨ ANIMACIÓN DEL TÍTULO - CON TOGGLEACTIONS
             ScrollTrigger.create({
-                trigger: "#titulo-galeria",
+                trigger: "#seccion-galeria",
                 start: "top 85%",
-                end: "bottom 20%",
-                // toggleActions: "play reverse play reverse"
-                // Formato: onEnter onLeave onEnterBack onLeaveBack
-                toggleActions: "play none none reverse",
-                animation: gsap.to("#titulo-galeria", {
-                    opacity: 1,
-                    y: 0,
-                    duration: 1.4,
-                    ease: "power3.out",
-                    paused: true
-                })
-            });
-
-            // ✨ ANIMACIÓN DE FOTOS CON EFECTO CASCADA - CON TOGGLEACTIONS
-            ScrollTrigger.create({
-                trigger: ".foto-card",
-                start: "top 100%",
-                end: "bottom 20%",
-                toggleActions: "play none none reverse",
-                animation: gsap.to(".foto-card", {
-                    opacity: 1,
-                    scale: 1,
-                    y: 0,
-                    duration: 1,
-                    stagger: {
-                        amount: 0.6,
-                        from: "start",
-                        ease: "power2.out"
-                    },
-                    ease: "power3.out",
-                    paused: true
-                })
-            });
-
-            // ✨ ANIMACIÓN ORNAMENTO INFERIOR - CON TOGGLEACTIONS
-            ScrollTrigger.create({
-                trigger: "#ornamento-inferior",
-                start: "top 95%",
-                end: "bottom 20%",
-                toggleActions: "play none none reverse",
-                animation: gsap.to("#ornamento-inferior", {
-                    opacity: 1,
-                    scale: 1,
-                    duration: 1,
-                    ease: "back.out(1.7)",
-                    paused: true
-                })
-            });
-
-            // 🖼️ SISTEMA DE CARRUSEL ULTRA PREMIUM
-            const fotos = [
-                { src: "/imagenes/Foto1.webp", titulo: "Momento Especial 1" },
-                { src: "/imagenes/Foto2.webp", titulo: "Momento Especial 2" },
-                { src: "/imagenes/Foto3.webp", titulo: "Momento Especial 3" },
-                { src: "/imagenes/Foto4.webp", titulo: "Momento Especial 4" },
-                { src: "/imagenes/Foto5.webp", titulo: "Momento Especial 5" },
-                { src: "/imagenes/Foto6.webp", titulo: "Momento Especial 6" }
-            ];
-
-            let indiceActual = 0;
-            const modal = document.getElementById("modal-galeria");
-            const carruselTrack = document.getElementById("carrusel-track");
-            const numeroActual = document.getElementById("numero-actual");
-            const numeroTotal = document.getElementById("numero-total");
-            const tituloFoto = document.getElementById("titulo-foto");
-            const infoFoto = document.getElementById("info-foto");
-            const miniaturasNav = document.getElementById("miniaturas-nav");
-            const btnAnterior = document.getElementById("btn-anterior");
-            const btnSiguiente = document.getElementById("btn-siguiente");
-            const cerrarModal = document.getElementById("cerrar-modal");
-
-            // Generar slides del carrusel
-            if (carruselTrack && numeroTotal) {
-                numeroTotal.textContent = fotos.length.toString();
-                
-                fotos.forEach((foto, index) => {
-                    const slide = document.createElement("div");
-                    slide.className = "min-w-full flex items-center justify-center px-4 md:px-12";
-                    slide.innerHTML = `
-                        <div class="relative max-w-5xl w-full">
-                            <div class="absolute -inset-12 bg-gradient-to-r from-[#C9A961]/20 via-[#d4b16e]/30 to-[#C9A961]/20 rounded-3xl blur-3xl opacity-50"></div>
-                            <div class="relative backdrop-blur-sm rounded-3xl overflow-hidden border-2 border-white/10 shadow-2xl">
-                                <img src="${foto.src}" alt="${foto.titulo}" class="w-full h-auto max-h-[75vh] md:max-h-[82vh] object-contain bg-black/20" />
-                                <div class="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-black/20 pointer-events-none"></div>
-                            </div>
-                        </div>
-                    `;
-                    carruselTrack.appendChild(slide);
-                });
-            }
-
-            // Crear miniaturas elegantes
-            if (miniaturasNav) {
-                fotos.forEach((foto, index) => {
-                    const mini = document.createElement("button");
-                    mini.className = "miniatura transition-all duration-300 hover:scale-110 focus:outline-none";
-                    mini.dataset.index = index.toString();
-                    mini.innerHTML = `
-                        <div class="relative">
-                            <div class="w-3 h-3 rounded-full bg-white/30 transition-all duration-300"></div>
-                        </div>
-                    `;
-                    miniaturasNav.appendChild(mini);
-                });
-            }
-
-            const actualizarCarrusel = (nuevo: number, animacion: boolean = true) => {
-                if (!carruselTrack) return;
-                
-                indiceActual = (nuevo + fotos.length) % fotos.length;
-                const desplazamiento = -indiceActual * 100;
-                
-                if (animacion) {
-                    gsap.to(carruselTrack, {
-                        x: `${desplazamiento}%`,
-                        duration: 0.7,
-                        ease: "power3.out"
-                    });
-                } else {
-                    gsap.set(carruselTrack, { x: `${desplazamiento}%` });
-                }
-
-                if (numeroActual) {
-                    gsap.to(numeroActual, {
-                        scale: 1.2,
-                        duration: 0.2,
-                        ease: "power2.out",
-                        onComplete: () => {
-                            numeroActual.textContent = (indiceActual + 1).toString();
-                            gsap.to(numeroActual, {
+                onEnter: () => {
+                    const tl = gsap.timeline();
+                    tl.to("#galeria-titulo", {
+                        opacity: 1,
+                        y: 0,
+                        duration: 1,
+                        ease: "power3.out",
+                    })
+                        .to(
+                            "#galeria-wrapper",
+                            {
+                                opacity: 1,
                                 scale: 1,
-                                duration: 0.2,
-                                ease: "power2.in"
-                            });
-                        }
-                    });
-                }
-
-                if (tituloFoto) {
-                    gsap.to(tituloFoto, {
-                        opacity: 0,
-                        y: -10,
-                        duration: 0.2,
-                        ease: "power2.in",
-                        onComplete: () => {
-                            tituloFoto.textContent = fotos[indiceActual].titulo;
-                            gsap.to(tituloFoto, {
+                                duration: 1,
+                                ease: "power3.out",
+                            },
+                            "-=0.5",
+                        )
+                        .to(
+                            "#miniaturas-container",
+                            {
                                 opacity: 1,
                                 y: 0,
-                                duration: 0.3,
-                                ease: "power2.out"
-                            });
+                                duration: 0.6,
+                                ease: "power2.out",
+                            },
+                            "-=0.3",
+                        )
+                        .to(
+                            "#btn-galeria-container",
+                            {
+                                opacity: 1,
+                                y: 0,
+                                duration: 0.6,
+                                ease: "back.out(1.5)",
+                            },
+                            "-=0.3",
+                        )
+                        .to(
+                            "#credito-galeria",
+                            { opacity: 1, duration: 0.6 },
+                            "-=0.3",
+                        );
+                },
+                onLeaveBack: () => {
+                    gsap.set("#galeria-titulo", { opacity: 0, y: 20 });
+                    gsap.set("#galeria-wrapper", { opacity: 0, scale: 0.96 });
+                    gsap.set("#miniaturas-container", { opacity: 0, y: 10 });
+                    gsap.set("#btn-galeria-container", { opacity: 0, y: 10 });
+                    gsap.set("#credito-galeria", { opacity: 0 });
+                },
+            });
+
+            // ── FOTOS ──
+            const fotos = Array.from({ length: 3 }, (_, i) => ({
+                src: `/imagenes/foto${i + 1}.png`,
+                alt: `Foto ${i + 1}`,
+            }));
+
+            const DURACION = 4500;
+            const CIRCUNFERENCIA = 94.2;
+            const viewport = document.getElementById("slides-viewport");
+            const dotsLateral = document.getElementById("dots-lateral");
+            const numSlide = document.getElementById("num-slide");
+            const progresoCirculo = document.getElementById("progreso-circulo");
+            const miniaturasTrack = document.getElementById("miniaturas-track");
+
+            fotos.forEach((foto, i) => {
+                if (!viewport) return;
+                const slide = document.createElement("div");
+                slide.className = "slide-item absolute inset-0 cursor-pointer";
+                slide.setAttribute("data-index", i.toString());
+                slide.style.cssText = `opacity:${i === 0 ? "1" : "0"}; z-index:${i === 0 ? "2" : "1"};`;
+                slide.innerHTML = `
+                    <div class="w-full h-full overflow-hidden">
+                        <img src="${foto.src}" alt="${foto.alt}"
+                            class="slide-img w-full h-full object-cover"
+                            style="transform-origin: center center;" />
+                    </div>
+                    <div class="absolute inset-0"
+                        style="background: linear-gradient(135deg, rgba(201,169,97,0.06) 0%, transparent 50%, rgba(15,61,46,0.06) 100%);">
+                    </div>
+                    <div class="slide-hover-icon absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-500">
+                        <div class="relative">
+                            <div class="w-20 h-20 rounded-full flex items-center justify-center"
+                                style="background: rgba(201,169,97,0.2); backdrop-filter: blur(8px); border: 1px solid rgba(201,169,97,0.4);">
+                                <svg class="w-8 h-8" fill="none" stroke="#C9A961" viewBox="0 0 24 24">
+                                    <circle cx="10.5" cy="10.5" r="6.5" stroke-width="1.5"></circle>
+                                    <path d="M15.5 15.5L21 21" stroke-width="1.5"></path>
+                                </svg>
+                            </div>
+                            <div class="absolute inset-0 rounded-full animate-ping"
+                                style="border: 1px solid rgba(201,169,97,0.3);"></div>
+                        </div>
+                    </div>
+                `;
+                slide.addEventListener("mouseenter", () => {
+                    const icon = slide.querySelector(
+                        ".slide-hover-icon",
+                    ) as HTMLElement;
+                    if (icon) icon.style.opacity = "1";
+                });
+                slide.addEventListener("mouseleave", () => {
+                    const icon = slide.querySelector(
+                        ".slide-hover-icon",
+                    ) as HTMLElement;
+                    if (icon) icon.style.opacity = "0";
+                });
+                slide.addEventListener("click", () => abrirModal(i));
+                viewport.appendChild(slide);
+
+                if (dotsLateral) {
+                    const dot = document.createElement("div");
+                    dot.className =
+                        "dot-lat transition-all duration-500 rounded-full";
+                    dot.style.cssText = `width:${i === 0 ? "8px" : "4px"}; height:${i === 0 ? "8px" : "4px"}; background:${i === 0 ? "rgba(201,169,97,0.9)" : "rgba(201,169,97,0.3)"}`;
+                    dotsLateral.appendChild(dot);
+                }
+
+                if (miniaturasTrack) {
+                    const mini = document.createElement("button");
+                    mini.className =
+                        "miniatura-btn flex-shrink-0 snap-start rounded-xl overflow-hidden";
+                    mini.setAttribute("data-mini", i.toString());
+                    mini.style.cssText = `width:52px; height:52px; border:2px solid ${i === 0 ? "rgba(201,169,97,0.9)" : "rgba(201,169,97,0.2)"}; opacity:${i === 0 ? "1" : "0.6"};`;
+                    mini.innerHTML = `<img src="${foto.src}" alt="${foto.alt}" class="w-full h-full object-cover" />`;
+                    mini.addEventListener("click", () => {
+                        irASlide(i);
+                        clearTimeout(autoTimer);
+                        programarSiguiente();
+                    });
+                    miniaturasTrack.appendChild(mini);
+                }
+            });
+
+            let kbTween: gsap.core.Tween | null = null;
+            function iniciarKenBurns(index: number) {
+                if (kbTween) kbTween.kill();
+                const slides = document.querySelectorAll(".slide-item");
+                const img = slides[index]?.querySelector(
+                    ".slide-img",
+                ) as HTMLElement;
+                if (!img) return;
+                gsap.set(img, { scale: 1, x: "0%", y: "0%" });
+                const dirs = [
+                    { scale: 1.08, x: "-2%", y: "-2%" },
+                    { scale: 1.08, x: "2%", y: "-1%" },
+                    { scale: 1.06, x: "-1%", y: "2%" },
+                    { scale: 1.07, x: "1%", y: "-2%" },
+                    { scale: 1.06, x: "-2%", y: "1%" },
+                    { scale: 1.08, x: "2%", y: "2%" },
+                    { scale: 1.07, x: "-1%", y: "-1%" },
+                    { scale: 1.06, x: "2%", y: "-2%" },
+                    { scale: 1.08, x: "-2%", y: "2%" },
+                    { scale: 1.07, x: "1%", y: "1%" },
+                    { scale: 1.06, x: "-2%", y: "-1%" },
+                    { scale: 1.08, x: "2%", y: "1%" },
+                    { scale: 1.07, x: "-1%", y: "2%" },
+                    { scale: 1.06, x: "1%", y: "-1%" },
+                ];
+                const d = dirs[index % dirs.length];
+                kbTween = gsap.to(img, {
+                    scale: d.scale,
+                    x: d.x,
+                    y: d.y,
+                    duration: DURACION / 1000 + 1,
+                    ease: "none",
+                });
+            }
+
+            let progresoTween: gsap.core.Tween | null = null;
+            function iniciarProgreso() {
+                if (progresoTween) progresoTween.kill();
+                if (!progresoCirculo) return;
+                gsap.set(progresoCirculo, { strokeDashoffset: CIRCUNFERENCIA });
+                progresoTween = gsap.to(progresoCirculo, {
+                    strokeDashoffset: 0,
+                    duration: DURACION / 1000,
+                    ease: "none",
+                });
+            }
+
+            let slideActual = 0;
+            let autoTimer: any;
+            let pausado = false;
+            let rafId: number | null = null;
+
+            function actualizarDots(index: number) {
+                document.querySelectorAll(".dot-lat").forEach((d, i) => {
+                    const el = d as HTMLElement;
+                    el.style.width = i === index ? "8px" : "4px";
+                    el.style.height = i === index ? "8px" : "4px";
+                    el.style.background =
+                        i === index
+                            ? "rgba(201,169,97,0.9)"
+                            : "rgba(201,169,97,0.3)";
+                });
+                if (numSlide)
+                    numSlide.textContent = String(index + 1).padStart(2, "0");
+
+                document.querySelectorAll(".miniatura-btn").forEach((m, i) => {
+                    const el = m as HTMLElement;
+                    el.style.border =
+                        i === index
+                            ? "2px solid rgba(201,169,97,0.9)"
+                            : "2px solid rgba(201,169,97,0.2)";
+                    el.style.opacity = i === index ? "1" : "0.6";
+                });
+
+                const miniActiva = document.querySelector(
+                    `[data-mini="${index}"]`,
+                ) as HTMLElement;
+                const track = document.getElementById("miniaturas-track");
+                if (miniActiva && track) {
+                    const offsetLeft =
+                        miniActiva.offsetLeft -
+                        track.clientWidth / 2 +
+                        miniActiva.clientWidth / 2;
+                    track.scrollTo({ left: offsetLeft, behavior: "smooth" });
+                }
+            }
+
+            function irASlide(nuevoIndex: number) {
+                if (rafId !== null) cancelAnimationFrame(rafId);
+                const slides = document.querySelectorAll(".slide-item");
+                const anterior = slideActual;
+                slideActual = (nuevoIndex + fotos.length) % fotos.length;
+
+                const slideAnterior = slides[anterior] as HTMLElement;
+                const slideSiguiente = slides[slideActual] as HTMLElement;
+                slideAnterior.style.zIndex = "2";
+                slideSiguiente.style.zIndex = "3";
+                slideSiguiente.style.opacity = "0";
+
+                const duracionMs = 1400;
+                let start: number | null = null;
+
+                function frame(ts: number) {
+                    if (!start) start = ts;
+                    const t = Math.min((ts - start) / duracionMs, 1);
+                    const ease =
+                        t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+                    slideSiguiente.style.opacity = String(ease);
+                    slideAnterior.style.opacity = String(1 - ease);
+                    if (t < 1) {
+                        rafId = requestAnimationFrame(frame);
+                    } else {
+                        slideSiguiente.style.opacity = "1";
+                        slideSiguiente.style.zIndex = "2";
+                        slideAnterior.style.opacity = "0";
+                        slideAnterior.style.zIndex = "1";
+                        rafId = null;
+                    }
+                }
+                rafId = requestAnimationFrame(frame);
+                actualizarDots(slideActual);
+                iniciarKenBurns(slideActual);
+                iniciarProgreso();
+            }
+
+            function programarSiguiente() {
+                clearTimeout(autoTimer);
+                autoTimer = setTimeout(() => {
+                    if (!pausado) {
+                        irASlide(slideActual + 1);
+                        programarSiguiente();
+                    }
+                }, DURACION);
+            }
+
+            const wrapper = document.getElementById("galeria-wrapper");
+            wrapper?.addEventListener("mouseenter", () => {
+                pausado = true;
+                progresoTween?.pause();
+                kbTween?.pause();
+            });
+            wrapper?.addEventListener("mouseleave", () => {
+                pausado = false;
+                progresoTween?.resume();
+                kbTween?.resume();
+                programarSiguiente();
+            });
+
+            let touchX = 0;
+            viewport?.addEventListener(
+                "touchstart",
+                (e) => {
+                    touchX = e.touches[0].clientX;
+                },
+                { passive: true },
+            );
+            viewport?.addEventListener("touchend", (e) => {
+                const diff = touchX - e.changedTouches[0].clientX;
+                if (Math.abs(diff) > 50) {
+                    irASlide(diff > 0 ? slideActual + 1 : slideActual - 1);
+                    programarSiguiente();
+                }
+            });
+
+            iniciarKenBurns(0);
+            actualizarDots(0);
+
+            const observerGaleria = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            pausado = false;
+                            iniciarProgreso();
+                            programarSiguiente();
+                        } else {
+                            pausado = true;
+                            clearTimeout(autoTimer);
+                            autoTimer = null;
+                            progresoTween?.pause();
+                            kbTween?.pause();
+                            if (rafId !== null) {
+                                cancelAnimationFrame(rafId);
+                                rafId = null;
+                            }
                         }
                     });
-                }
+                },
+                { threshold: 0, rootMargin: "0px" },
+            );
 
-                document.querySelectorAll('.miniatura').forEach((mini, idx) => {
-                    const dot = mini.querySelector('div > div');
-                    if (idx === indiceActual) {
-                        gsap.to(dot, {
-                            width: '2rem',
-                            height: '0.75rem',
-                            borderRadius: '9999px',
-                            backgroundColor: '#C9A961',
-                            duration: 0.4,
-                            ease: "power2.out"
-                        });
-                    } else {
-                        gsap.to(dot, {
-                            width: '0.75rem',
-                            height: '0.75rem',
-                            borderRadius: '9999px',
-                            backgroundColor: 'rgba(255, 255, 255, 0.3)',
-                            duration: 0.4,
-                            ease: "power2.out"
-                        });
-                    }
+            const galeriaSection = document.getElementById("seccion-galeria");
+            if (galeriaSection) observerGaleria.observe(galeriaSection);
+
+            // ── MODAL ──
+            const modal = document.getElementById("modal-galeria");
+            const modalTrack = document.getElementById("modal-track");
+            const modalNum = document.getElementById("modal-num");
+            const modalTotal = document.getElementById("modal-total");
+            const modalDotsMini = document.getElementById("modal-dots-mini");
+            const btnAnterior = document.getElementById("btn-anterior");
+            const btnSiguiente = document.getElementById("btn-siguiente");
+            const cerrarModalBtn = document.getElementById("cerrar-modal");
+            const btnVerGaleria = document.getElementById("btn-ver-galeria");
+
+            if (modalTotal)
+                modalTotal.textContent = String(fotos.length).padStart(2, "0");
+
+            fotos.forEach((foto) => {
+                if (!modalTrack) return;
+                const slide = document.createElement("div");
+                slide.className =
+                    "min-w-full flex items-center justify-center px-2";
+                slide.innerHTML = `
+                    <div class="relative w-full rounded-2xl overflow-hidden" style="border:1px solid rgba(201,169,97,0.15);">
+                        <img src="${foto.src}" alt="${foto.alt}" class="w-full h-auto max-h-[80vh] object-contain" style="background:rgba(0,0,0,0.3);" />
+                    </div>
+                `;
+                modalTrack.appendChild(slide);
+            });
+
+            fotos.forEach((_, i) => {
+                if (!modalDotsMini) return;
+                const d = document.createElement("div");
+                d.className = "modal-dot-mini rounded-full";
+                d.style.cssText = `width:${i === 0 ? "16px" : "4px"}; height:4px; background:${i === 0 ? "rgba(201,169,97,0.8)" : "rgba(201,169,97,0.2)"}; transition:all 0.4s;`;
+                modalDotsMini.appendChild(d);
+            });
+
+            let indiceModal = 0;
+
+            function actualizarModalDots(index: number) {
+                document.querySelectorAll(".modal-dot-mini").forEach((d, i) => {
+                    const el = d as HTMLElement;
+                    el.style.width = i === index ? "16px" : "4px";
+                    el.style.background =
+                        i === index
+                            ? "rgba(201,169,97,0.8)"
+                            : "rgba(201,169,97,0.2)";
                 });
+                if (modalNum)
+                    modalNum.textContent = String(index + 1).padStart(2, "0");
+            }
+
+            const moverModal = (nuevo: number, animar = true) => {
+                if (!modalTrack) return;
+                indiceModal = (nuevo + fotos.length) % fotos.length;
+                if (animar) {
+                    gsap.to(modalTrack, {
+                        x: `-${indiceModal * 100}%`,
+                        duration: 0.6,
+                        ease: "power3.out",
+                    });
+                } else {
+                    gsap.set(modalTrack, { x: `-${indiceModal * 100}%` });
+                }
+                actualizarModalDots(indiceModal);
             };
 
-            const abrirModal = (indice: number) => {
-                indiceActual = indice;
-                if (modal) {
-                    modal.classList.remove("hidden");
-                    modal.classList.add("flex");
-                    document.body.style.overflow = 'hidden';
-                    
-                    actualizarCarrusel(indice, false);
-                    
-                    gsap.fromTo(modal, 
-                        { opacity: 0 },
-                        { opacity: 1, duration: 0.4, ease: "power2.out" }
-                    );
-                    
-                    gsap.fromTo("#modal-contenido", 
-                        { scale: 0.85, opacity: 0 },
-                        { scale: 1, opacity: 1, duration: 0.6, ease: "power3.out", delay: 0.1 }
-                    );
-
-                    gsap.fromTo("#info-foto", 
-                        { opacity: 0, x: -20 },
-                        { opacity: 1, x: 0, duration: 0.5, ease: "power2.out", delay: 0.3 }
-                    );
-
-                    gsap.fromTo([btnAnterior, btnSiguiente, cerrarModal], 
-                        { opacity: 0, scale: 0.8 },
-                        { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(2)", delay: 0.2, stagger: 0.05 }
-                    );
+            function crearParticulas() {
+                const container = document.getElementById("modal-particulas");
+                if (!container) return;
+                container.innerHTML = "";
+                for (let i = 0; i < 12; i++) {
+                    const p = document.createElement("div");
+                    p.style.cssText = `position:absolute; width:${Math.random() * 3 + 1}px; height:${Math.random() * 3 + 1}px; background:rgba(201,169,97,${Math.random() * 0.3 + 0.1}); border-radius:50%; left:${Math.random() * 100}%; top:${Math.random() * 100}%;`;
+                    container.appendChild(p);
+                    gsap.to(p, {
+                        y: -30 - Math.random() * 40,
+                        x: (Math.random() - 0.5) * 20,
+                        opacity: 0,
+                        duration: 3 + Math.random() * 4,
+                        repeat: -1,
+                        delay: Math.random() * 3,
+                        ease: "none",
+                    });
                 }
+            }
+
+            const abrirModal = (indice: number) => {
+                if (!modal) return;
+                pausado = true;
+                clearTimeout(autoTimer);
+                progresoTween?.pause();
+                kbTween?.pause();
+                modal.classList.remove("hidden");
+                modal.classList.add("flex");
+                document.body.style.overflow = "hidden";
+                moverModal(indice, false);
+                crearParticulas();
+                gsap.fromTo(
+                    modal,
+                    { opacity: 0 },
+                    { opacity: 1, duration: 0.5, ease: "power2.out" },
+                );
+                gsap.fromTo(
+                    "#modal-contenido",
+                    { scale: 0.88, opacity: 0, y: 20 },
+                    {
+                        scale: 1,
+                        opacity: 1,
+                        y: 0,
+                        duration: 0.7,
+                        ease: "power3.out",
+                        delay: 0.1,
+                    },
+                );
             };
 
             const cerrarModalFn = () => {
-                if (modal) {
-                    gsap.to([btnAnterior, btnSiguiente, cerrarModal, "#info-foto"], {
-                        opacity: 0,
-                        scale: 0.8,
-                        duration: 0.2,
-                        ease: "power2.in"
-                    });
-
-                    gsap.to("#modal-contenido", {
-                        scale: 0.85,
-                        opacity: 0,
-                        duration: 0.3,
-                        ease: "power2.in"
-                    });
-                    
-                    gsap.to(modal, {
-                        opacity: 0,
-                        duration: 0.3,
-                        ease: "power2.in",
-                        delay: 0.1,
-                        onComplete: () => {
-                            modal.classList.add("hidden");
-                            modal.classList.remove("flex");
-                            document.body.style.overflow = '';
-                        }
-                    });
-                }
+                if (!modal) return;
+                gsap.to("#modal-contenido", {
+                    scale: 0.88,
+                    opacity: 0,
+                    y: 20,
+                    duration: 0.4,
+                    ease: "power2.in",
+                });
+                gsap.to(modal, {
+                    opacity: 0,
+                    duration: 0.4,
+                    ease: "power2.in",
+                    delay: 0.15,
+                    onComplete: () => {
+                        modal.classList.add("hidden");
+                        modal.classList.remove("flex");
+                        document.body.style.overflow = "";
+                        pausado = false;
+                        iniciarProgreso();
+                        programarSiguiente();
+                    },
+                });
             };
 
-            // Eventos de click en fotos
-            document.querySelectorAll(".foto-card").forEach(card => {
-                card.addEventListener("click", () => {
-                    const indice = parseInt(card.getAttribute("data-index") || "0");
-                    abrirModal(indice);
-                });
-            });
-
+            btnVerGaleria?.addEventListener("click", () => abrirModal(0));
             btnAnterior?.addEventListener("click", (e) => {
                 e.stopPropagation();
-                actualizarCarrusel(indiceActual - 1);
+                moverModal(indiceModal - 1);
             });
-
             btnSiguiente?.addEventListener("click", (e) => {
                 e.stopPropagation();
-                actualizarCarrusel(indiceActual + 1);
+                moverModal(indiceModal + 1);
             });
-
-            document.querySelectorAll('.miniatura').forEach(mini => {
-                mini.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    const nuevoIndice = parseInt((mini as HTMLElement).dataset.index || "0");
-                    actualizarCarrusel(nuevoIndice);
-                });
-            });
-
-            cerrarModal?.addEventListener("click", (e) => {
+            cerrarModalBtn?.addEventListener("click", (e) => {
                 e.stopPropagation();
                 cerrarModalFn();
+            });
+            modal?.addEventListener("click", (e) => {
+                if (e.target === modal) cerrarModalFn();
             });
 
             document.addEventListener("keydown", (e) => {
                 if (modal && !modal.classList.contains("hidden")) {
-                    if (e.key === "Escape") {
-                        cerrarModalFn();
-                    } else if (e.key === "ArrowLeft") {
-                        actualizarCarrusel(indiceActual - 1);
-                    } else if (e.key === "ArrowRight") {
-                        actualizarCarrusel(indiceActual + 1);
-                    }
+                    if (e.key === "Escape") cerrarModalFn();
+                    if (e.key === "ArrowLeft") moverModal(indiceModal - 1);
+                    if (e.key === "ArrowRight") moverModal(indiceModal + 1);
                 }
             });
 
-            modal?.addEventListener("click", (e) => {
-                if (e.target === modal) {
-                    cerrarModalFn();
-                }
+            let mTouchX = 0;
+            modal?.addEventListener(
+                "touchstart",
+                (e) => {
+                    mTouchX = e.touches[0].clientX;
+                },
+                { passive: true },
+            );
+            modal?.addEventListener("touchend", (e) => {
+                const diff = mTouchX - e.changedTouches[0].clientX;
+                if (Math.abs(diff) > 60)
+                    moverModal(diff > 0 ? indiceModal + 1 : indiceModal - 1);
             });
-
-            // 📱 SOPORTE PARA SWIPE TÁCTIL
-            let touchStartX = 0;
-            let touchEndX = 0;
-            let touchStartY = 0;
-            let touchEndY = 0;
-            let isDragging = false;
-
-            const handleSwipe = () => {
-                const diffX = touchStartX - touchEndX;
-                const diffY = Math.abs(touchStartY - touchEndY);
-                
-                if (Math.abs(diffX) > 60 && Math.abs(diffX) > diffY * 2) {
-                    if (diffX > 0) {
-                        actualizarCarrusel(indiceActual + 1);
-                    } else {
-                        actualizarCarrusel(indiceActual - 1);
-                    }
-                }
-            };
-
-            modal?.addEventListener('touchstart', (e) => {
-                touchStartX = e.touches[0].clientX;
-                touchStartY = e.touches[0].clientY;
-                isDragging = true;
-            }, { passive: true });
-
-            modal?.addEventListener('touchmove', (e) => {
-                if (isDragging) {
-                    touchEndX = e.touches[0].clientX;
-                    touchEndY = e.touches[0].clientY;
-                }
-            }, { passive: true });
-
-            modal?.addEventListener('touchend', () => {
-                if (isDragging) {
-                    handleSwipe();
-                    isDragging = false;
-                }
-            });
-
-            console.log("📸✨ ¡Galería ultra premium lista!");
         });
     }
 </script>
 
 <style>
-    /* Animaciones de tarjetas */
-    .foto-card {
-        transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    #slides-viewport {
         position: relative;
+        contain: strict;
+        will-change: transform;
     }
-
-    .foto-card::before {
-        content: '';
-        position: absolute;
-        inset: -2px;
-        border-radius: 2rem;
-        padding: 2px;
-        background: linear-gradient(135deg, transparent, rgba(201, 169, 97, 0.3), transparent);
-        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-        -webkit-mask-composite: xor;
-        mask-composite: exclude;
-        opacity: 0;
-        transition: opacity 0.5s ease;
+    .slide-item {
+        will-change: opacity;
+        contain: layout style;
     }
-
-    .foto-card:hover::before {
-        opacity: 1;
+    .slide-img {
+        will-change: transform;
     }
-
-    .foto-card:hover {
-        transform: translateY(-20px) scale(1.02);
-        box-shadow: 
-            0 40px 80px -20px rgba(201, 169, 97, 0.3),
-            0 20px 40px -20px rgba(201, 169, 97, 0.2),
-            0 0 100px -20px rgba(201, 169, 97, 0.1);
+    #modal-track {
+        will-change: transform;
+        display: flex;
     }
-
-    /* Animación de ping suave */
-    @keyframes ping-slow {
-        0%, 100% {
-            transform: scale(1);
-            opacity: 0.3;
-        }
-        50% {
-            transform: scale(1.5);
-            opacity: 0;
-        }
+    #miniaturas-track::-webkit-scrollbar {
+        display: none;
     }
-
-    .animate-ping {
-        animation: ping-slow 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+    .miniatura-btn {
+        transition:
+            border 0.3s,
+            opacity 0.3s;
     }
-
-    .animate-ping-slow {
-        animation: ping-slow 3s cubic-bezier(0, 0, 0.2, 1) infinite;
+    .miniatura-btn:hover {
+        opacity: 1 !important;
+        transform: scale(1.08);
     }
-
-    /* Animación de aparición */
-    @keyframes fade-in {
-        from {
-            opacity: 0;
-            transform: translateY(10px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-    .animate-fade-in {
-        animation: fade-in 0.6s ease-out forwards;
-    }
-
-    /* Miniaturas */
-    .miniatura {
+    .boton-galeria {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 28px;
+        background: #626a54;
+        color: white;
+        border: none;
+        border-radius: 50px;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.15em;
         cursor: pointer;
+        transition: all 0.3s ease;
     }
-
-    /* Carrusel optimizado */
-    #carrusel-track {
-        will-change: transform;
+    .boton-galeria:hover {
+        background: #9c7a2e;
+        box-shadow: 0 4px 16px rgba(156, 122, 46, 0.35);
+        transform: translateY(-2px);
     }
-
-    #carrusel-track img {
-        will-change: transform;
-        backface-visibility: hidden;
-    }
-
-    /* Botones con efecto glass */
-    button {
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-    }
-
-    button:active {
-        transform: scale(0.95);
-    }
-
-    /* Mejoras de accesibilidad */
-    button:focus-visible {
-        outline: 2px solid #C9A961;
-        outline-offset: 3px;
-    }
-
-    /* Prevenir selección */
-    .foto-card,
-    .miniatura,
-    button {
-        user-select: none;
-        -webkit-user-select: none;
-        -webkit-touch-callout: none;
-    }
-
-    /* Optimización para móviles */
-    @media (max-width: 768px) {
-        .foto-card:hover {
-            transform: translateY(-12px) scale(1.01);
+    @keyframes ping {
+        75%,
+        100% {
+            transform: scale(1.6);
+            opacity: 0;
         }
     }
-
-    /* Smooth scroll */
-    #modal-galeria {
-        overscroll-behavior: contain;
-        -webkit-overflow-scrolling: touch;
-    }
-
-    /* Transiciones suaves para el modal */
-    #modal-galeria {
-        transition: opacity 0.3s ease;
-    }
-
-    /* Mejora de rendimiento */
-    * {
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
+    .animate-ping {
+        animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
     }
 </style>
